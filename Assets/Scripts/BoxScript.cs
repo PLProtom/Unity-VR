@@ -5,7 +5,7 @@ using UnityEngine;
 public class BoxScript : MonoBehaviour
 {
     const float speed = 5.0f;
-    public enum BoxType { Up, Down,Left, Right};
+    public enum BoxType { Up, Down,Left, Right, Any, Shoot};
     public BoxType boxType;
 
     void Update()
@@ -23,15 +23,15 @@ public class BoxScript : MonoBehaviour
             if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
             {
 
-                if (direction.x > 0) { if (boxType == BoxType.Left) { BoxHit(); } } //left
-                else { if (boxType == BoxType.Right) { BoxHit(); } } //right
+                if (direction.x > 0) { if (boxType == BoxType.Left || boxType == BoxType.Any) { BoxHit(); } } //left
+                else { if (boxType == BoxType.Right || boxType == BoxType.Any) { BoxHit(); } } //right
 
             }
             else
             {
 
-                if (direction.y > 0) { if (boxType == BoxType.Down) { BoxHit(); } } //down
-                else { if (boxType == BoxType.Up) { BoxHit(); } } //up
+                if (direction.y > 0) { if (boxType == BoxType.Down || boxType == BoxType.Any) { BoxHit(); } } //down
+                else { if (boxType == BoxType.Up || boxType == BoxType.Any) { BoxHit(); } } //up
 
             }
         }
