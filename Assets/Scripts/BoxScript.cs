@@ -8,6 +8,11 @@ public class BoxScript : MonoBehaviour
     public enum BoxType { Up, Down,Left, Right, Any, Shoot};
     public BoxType boxType;
 
+    public GameObject boxUpHalved;
+    public GameObject boxAnyHalved;
+
+    int hitDir = 0;
+
     void Update()
     {
         transform.Translate(-speed * Time.deltaTime, 0, 0);
@@ -23,15 +28,15 @@ public class BoxScript : MonoBehaviour
             if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
             {
 
-                if (direction.x > 0) { if (boxType == BoxType.Left || boxType == BoxType.Any) { BoxHit(); } } //left
-                else { if (boxType == BoxType.Right || boxType == BoxType.Any) { BoxHit(); } } //right
+                if (direction.x > 0) { if (boxType == BoxType.Left || boxType == BoxType.Any) { hitDir = 3; BoxHit(); } } //left 3
+                else { if (boxType == BoxType.Right || boxType == BoxType.Any) { hitDir = 1; BoxHit(); } } //right 1
 
             }
             else
             {
 
-                if (direction.y > 0) { if (boxType == BoxType.Down || boxType == BoxType.Any) { BoxHit(); } } //down
-                else { if (boxType == BoxType.Up || boxType == BoxType.Any) { BoxHit(); } } //up
+                if (direction.y > 0) { if (boxType == BoxType.Down || boxType == BoxType.Any) { hitDir = 2; BoxHit(); } } //down 2
+                else { if (boxType == BoxType.Up || boxType == BoxType.Any) { hitDir = 0; BoxHit(); } } //up 0
 
             }
         }
@@ -40,5 +45,13 @@ public class BoxScript : MonoBehaviour
     void BoxHit()
     {
         Destroy(gameObject);
+        if (boxType == BoxType.Left || boxType == BoxType.Right || boxType == BoxType.Up || boxType == BoxType.Down)
+        {
+            Instantiate(boxUpHalved, transform.position, transform.rotation);
+        }
+        else if (boxType == BoxType.Any)
+        {
+            Instantiate(boxAnyHalved, transform.position, Quaternion.Euler(new Vector3(hitDir * 90, -90, 0)));
+        }
     }
 }
