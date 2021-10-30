@@ -45,9 +45,21 @@ public class BoxScript : MonoBehaviour
     void BoxHit()
     {
         Destroy(gameObject);
-        if (boxType == BoxType.Left || boxType == BoxType.Right || boxType == BoxType.Up || boxType == BoxType.Down)
+        if (boxType == BoxType.Up)
         {
             Instantiate(boxUpHalved, transform.position, transform.rotation);
+        }
+        else if (boxType == BoxType.Down)
+        {
+            Instantiate(boxUpHalved, transform.position, Quaternion.Euler(new Vector3(hitDir * 90, -90, 0)));
+        }
+        else if (boxType == BoxType.Left)
+        {
+            Instantiate(boxUpHalved, transform.position, Quaternion.Euler(new Vector3(hitDir * 90, -90, 0)));
+        }
+        else if (boxType == BoxType.Right)
+        {
+            Instantiate(boxUpHalved, transform.position, Quaternion.Euler(new Vector3(hitDir * 90, -90, 0)));
         }
         else if (boxType == BoxType.Any)
         {
