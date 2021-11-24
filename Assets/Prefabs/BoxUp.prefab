@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7727261982364244423}
   m_RootOrder: 0
@@ -110,6 +111,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7727261982364244423}
   m_RootOrder: 1
@@ -188,6 +190,7 @@ GameObject:
   - component: {fileID: 7833455922487688750}
   - component: {fileID: 7833455922487688736}
   - component: {fileID: 7833455922487688737}
+  - component: {fileID: -3514362173842545971}
   m_Layer: 0
   m_Name: BoxUp
   m_TagString: Untagged
@@ -205,6 +208,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -1.0000048, y: -0.36, z: 43.14}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7155247735455525023}
   - {fileID: 50599621745837575}
@@ -255,3 +259,15 @@ MonoBehaviour:
   boxType: 0
   boxUpHalved: {fileID: 9209635447719611708, guid: 7b8ae7f939180ac439b1feefab1a5b2e, type: 3}
   boxAnyHalved: {fileID: 9209635447719611708, guid: 3994a0703ecc38c4b88a8e00d2a83893, type: 3}
+--- !u!114 &-3514362173842545971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6951147117826261885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d237ff5817b0c4244b65621b4118355e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

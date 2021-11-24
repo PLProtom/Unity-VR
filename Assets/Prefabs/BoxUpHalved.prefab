@@ -56,6 +56,7 @@ Transform:
   m_LocalRotation: {x: -0.00020550936, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.026682293, z: -0.5521089}
   m_LocalScale: {x: 2, y: 2, z: -2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8329495308625003055}
   m_RootOrder: 1
@@ -149,6 +150,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.618}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 130401301168196385}
   m_RootOrder: 1
@@ -253,6 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 50985798413388281}
+  - component: {fileID: -3204152322693707553}
   m_Layer: 0
   m_Name: BoxUpHalved
   m_TagString: Untagged
@@ -270,12 +273,26 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 130401301168196385}
   - {fileID: 8329495308625003055}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3204152322693707553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9209635447719611708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde807ca796dd354ba7c8666bb04a03c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Halves: {fileID: 9209635447719611708}
 --- !u!1001 &452046852428950730
 PrefabInstance:
   m_ObjectHideFlags: 0
