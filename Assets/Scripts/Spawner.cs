@@ -15,9 +15,21 @@ public class Spawner : MonoBehaviour
     public GameObject spawner5;
     public GameObject spawner6;
 
+    public bool isStarted;
+
+
+
     void Start()
     {
-        StartCoroutine(waiter());
+        GameObject startCube = GameObject.Find("StartCube");
+        start startScript = startCube.GetComponent<start>();
+
+        isStarted = startScript.isStarted;
+
+        if (isStarted)
+        {
+            StartCoroutine(waiter());
+        }
     }
 
     void Update()

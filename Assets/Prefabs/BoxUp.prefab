@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 7833455922487688736}
   - component: {fileID: 7833455922487688737}
   - component: {fileID: -3514362173842545971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BoxUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
