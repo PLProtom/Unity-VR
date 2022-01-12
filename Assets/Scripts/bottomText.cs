@@ -6,16 +6,14 @@ using TMPro;
 public class BottomText : MonoBehaviour
 {
     private TextMeshPro textMesh;
-    string startText = "Map 1";
 
     // Start is called before the first frame update
     void Start()
     {
-        textMesh = gameObject.GetComponent<TextMeshPro>();
+        textMesh = GetComponent<TextMeshPro>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeText(string startText)
     {
         textMesh.text = startText;
     }

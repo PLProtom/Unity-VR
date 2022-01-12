@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227d140c2e1fe244f9c7400bb5445403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxUpHalved: {fileID: 9209635447719611708, guid: cee17b817159da4449532a533f2f1ba1, type: 3}
 --- !u!114 &-2458589736591388665
 MonoBehaviour:
   m_ObjectHideFlags: 0

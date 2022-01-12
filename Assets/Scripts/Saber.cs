@@ -23,7 +23,8 @@ public class Saber : MonoBehaviour
 	{
 		if(Vector3.Angle(transform.position-previousPos,hit.transform.up)>130)
 		{
-			Destroy(hit.transform.gameObject);
+                //Destroy(hit.transform.gameObject);
+                hit.transform.gameObject.GetComponent<BoxScript>().Break();
 		}
 	}
 	previousPos = transform.position;

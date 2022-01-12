@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227d140c2e1fe244f9c7400bb5445403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxUpHalved: {fileID: 9209635447719611708, guid: f504367a27e04084fa2501644ce1335f, type: 3}
 --- !u!114 &3199905546457960736
 MonoBehaviour:
   m_ObjectHideFlags: 0
