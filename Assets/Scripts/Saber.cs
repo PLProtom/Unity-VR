@@ -6,12 +6,16 @@ public class Saber : MonoBehaviour
 {
 
 	public LayerMask layer;
+    public LayerMask wrongLayer;
+
 	private Vector3 previousPos;
+
+    PointsScript ps;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ps = GameObject.Find("Points").GetComponent<PointsScript>();
     }
 
     // Update is called once per frame
@@ -24,9 +28,15 @@ public class Saber : MonoBehaviour
 		if(Vector3.Angle(transform.position-previousPos,hit.transform.up)>130)
 		{
                 //Destroy(hit.transform.gameObject);
+                ps.points += 1 * (ps.combo + 1);
+                ps.combo++;
                 hit.transform.gameObject.GetComponent<BoxScript>().Break();
 		}
 	}
-	previousPos = transform.position;
+    if (Physics.Raycast(transform.position, transform.right, out hit, 1.4f, wrongLayer))
+    {
+        // do zrobienia
+    }
+    previousPos = transform.position;
     }
 }

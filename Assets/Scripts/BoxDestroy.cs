@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class BoxDestroy : MonoBehaviour
 {
+    PointsScript ps;
+
+    private void Start()
+    {
+        ps = GameObject.Find("Points").GetComponent<PointsScript>();
+    }
+
     IEnumerator waiter()
     {
         while (true)
@@ -17,6 +24,7 @@ public class BoxDestroy : MonoBehaviour
     {
         if (other.name == "Granica")
         {
+            ps.combo = 0;
             StartCoroutine(waiter());
         }
     }
