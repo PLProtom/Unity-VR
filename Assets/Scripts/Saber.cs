@@ -30,12 +30,22 @@ public class Saber : MonoBehaviour
                 //Destroy(hit.transform.gameObject);
                 ps.points += 1 * (ps.combo + 1);
                 ps.combo++;
+                if (ps.hp < 100)
+                {
+                    ps.hp += 1;
+                }
                 hit.transform.gameObject.GetComponent<BoxScript>().Break();
-		}
+		} else {
+                ps.combo = 0;
+                ps.hp -= 5;
+                hit.transform.gameObject.GetComponent<BoxScript>().Break();
+        }
 	}
     if (Physics.Raycast(transform.position, transform.right, out hit, 1.4f, wrongLayer))
     {
-        // do zrobienia
+            ps.combo = 0;
+            ps.hp -= 5;
+            hit.transform.gameObject.GetComponent<BoxScript>().Break();
     }
     previousPos = transform.position;
     }
