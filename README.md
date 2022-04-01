@@ -1,39 +1,31 @@
-# WIP
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo]()
 
 
-# Project Title
+# Project Unity VR
 
-A brief description of what this project does and who it's for
+Our first game made for VR
 
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/PLProtom/Unity-VR/tree/main/Screenshots/s1.png)
 
 
 ## Demo
 
-Insert gif or link to demo
+[Releases](https://github.com/PLProtom/Unity-VR/releases)
 
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+- Works on Oculus
 
 
 ## FAQ
 
-#### Question 1
+#### Does it work on ... ?
 
-Answer 1
-
-#### Question 2
-
-Answer 2
+Currently we tested only Quest 2
 
 
 ## Authors
