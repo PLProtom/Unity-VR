@@ -8,7 +8,7 @@ Our first game made for VR
 
 ## Screenshots
 
-![App Screenshot](https://github.com/PLProtom/Unity-VR/tree/main/Screenshots/s1.png)
+![App Screenshot](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/s1.png)
 
 
 ## Demo
