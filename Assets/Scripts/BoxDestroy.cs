@@ -25,6 +25,7 @@ public class BoxDestroy : MonoBehaviour
         if (other.name == "Granica")
         {
             ps.combo = 0;
+            ps.hp -= 5;
             StartCoroutine(waiter());
         }
     }
