@@ -1,4 +1,4 @@
-![Logo]()
+![Logo](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/logo.png)
 
 
 # Project Unity VR
@@ -8,7 +8,7 @@ Our first game made for VR
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/s1.png)
+![App Screenshot](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/s2.png)
 
 
 ## Demo
