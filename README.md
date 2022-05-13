@@ -1,12 +1,12 @@
 ![Logo](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/logo.png)
 
 
-# Project Unity VR
+# Projekt Unity VR
 
-Our first game made for VR
+Nasza pierwsza gra stworzona dla VR
 
 
-## Screenshots
+## Screenshoty
 
 ![App Screenshot](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/s2.png)
 ![App Screenshot](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/s3.png)
@@ -17,19 +17,20 @@ Our first game made for VR
 [Releases](https://github.com/PLProtom/Unity-VR/releases)
 
 
-## Features
+## Zalety
 
-- Works on Oculus
+- Działa na Oculus
+- Otwartoźródłowe
 
 
 ## FAQ
 
-#### Does it work on ... ?
+#### Czy działa na ... ?
 
-Currently we tested only Quest 2
+Obecnie testowaliśmy grę tylko na Oculus Quest 2
 
 
-## Authors
+## Autorzy
 
 - [@PLProtom](https://github.com/PLProtom)
 - [@bkielczyk](https://github.com/bkielczyk)
