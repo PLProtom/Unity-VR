@@ -1,10 +1,9 @@
 ![Logo](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/logo.png)
 
 
-# Projekt Unity VR
+# RythmVR
 
-Nasza pierwsza gra stworzona dla VR
-
+Gra rytmiczno-ruchowa z wykorzystaniem technologii VR
 
 ## Screenshoty
 
@@ -21,6 +20,7 @@ Nasza pierwsza gra stworzona dla VR
 
 - Działa na Oculus
 - Otwartoźródłowe
+- Darmowe
 
 
 ## FAQ
@@ -28,6 +28,9 @@ Nasza pierwsza gra stworzona dla VR
 #### Czy działa na ... ?
 
 Obecnie testowaliśmy grę tylko na Oculus Quest 2
+
+#### Czy mogę grać bez komputera/bez VR?
+Nie
 
 
 ## Autorzy
