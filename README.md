@@ -25,12 +25,11 @@ Gra rytmiczno-ruchowa z wykorzystaniem technologii VR
 
 ## FAQ
 
-#### Czy działa na ... ?
+#### Q: Czy działa na ... ?
+A: Obecnie testowaliśmy grę tylko na Oculus Quest 2
 
-Obecnie testowaliśmy grę tylko na Oculus Quest 2
-
-#### Czy mogę grać bez komputera/bez VR?
-Nie
+#### Q: Czy mogę grać bez komputera/bez VR?
+A: Nie
 
 
 ## Autorzy
