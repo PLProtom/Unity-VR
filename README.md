@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/logo.png)
+![Logo](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/Logo.png)
 
 
 # RythmVR
