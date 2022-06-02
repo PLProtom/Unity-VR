@@ -4,24 +4,14 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject orange;
-    public GameObject orangeAny;
-    public GameObject purple;
-    public GameObject purpleAny;
+    public GameObject[] cubes;
+    public Transform[] points;
+    public float beat;
+    private float timer;
+    private Vector3 spawnRotation;
 
     public GameObject startCube;
-    public GameObject[] spawner;
     public int isStarted;
-
-    public Quaternion up = new Quaternion(0, -0.707106829f, 0, 0.707106829f);
-    public Quaternion down = new Quaternion(0.707106829f, 0, 0.707106829f, 0);
-    public Quaternion left = new Quaternion(0.5f, -0.5f, 0.5f, 0.5f);
-    public Quaternion right = new Quaternion(-0.5f, -0.5f, -0.5f, 0.5f);
-
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
@@ -33,31 +23,38 @@ public class Spawner : MonoBehaviour
 
         if (isStarted == 1)
         {
-            isStarted = 2;
-            StartCoroutine(waiter());
-        }
-    }
+            //isStarted = 2;
+            if (timer > beat)
+            {
+                //cube.transform.Rotate(transform.right, 90 * Random.Range(0, 4));
+                   
+                GameObject cube = Instantiate(cubes[Random.Range(0, 2)], points[Random.Range(0, 7)]);
+                cube.transform.localPosition = Vector3.zero;
+                int randomRotation = Random.Range(0, 4);
 
-    IEnumerator waiter()
-    {
-        while(true)
-        {
-            Instantiate(purple, spawner[0].transform.position, up);
-            yield return new WaitForSeconds(1);
-            Instantiate(purple, spawner[3].transform.position, left);
-            yield return new WaitForSeconds(1);
-            Instantiate(purple, spawner[4].transform.position, down);
-            yield return new WaitForSeconds(1);
-            Instantiate(purple, spawner[7].transform.position, left);
-            yield return new WaitForSeconds(1);
-            Instantiate(orange, spawner[1].transform.position, up);
-            Instantiate(orange, spawner[5].transform.position, up);
-            yield return new WaitForSeconds(1);
-            Instantiate(orange, spawner[2].transform.position, right);
-            Instantiate(orange, spawner[6].transform.position, right);
-            yield return new WaitForSeconds(1);
-            Instantiate(orange, spawner[1].transform.position, down);
-            yield return new WaitForSeconds(1);
+                if (randomRotation == 0)
+                {
+                    spawnRotation.Set(0, 90, 0);
+                }
+                else if (randomRotation == 1)
+                {
+                    spawnRotation.Set(-90, 0, 90);
+                }
+                else if (randomRotation == 2)
+                {
+                    spawnRotation.Set(0, -90, 180);
+                }
+                else if (randomRotation == 3)
+                {
+                    spawnRotation.Set(90, 0, -90);
+                }
+
+                cube.transform.Rotate(spawnRotation);
+
+                timer -= beat;
+            }
+
+            timer += Time.deltaTime;
         }
     }
 }
