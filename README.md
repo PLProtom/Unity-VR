@@ -7,11 +7,12 @@ Gra rytmiczno-ruchowa z wykorzystaniem technologii VR
 
 ## Screenshoty
 
-![App Screenshot](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/s2.png)
-![App Screenshot](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/s3.png)
+![Screenshot](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/s2.png)
+![Screenshot](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/s3.png)
+![Screenshot](https://raw.githubusercontent.com/PLProtom/Unity-VR/main/Screenshots/s4.png)
 
 
-## Demo
+## Wydania
 
 [Releases](https://github.com/PLProtom/Unity-VR/releases)
 
