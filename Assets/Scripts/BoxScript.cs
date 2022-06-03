@@ -10,7 +10,8 @@ public class BoxScript : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(-speed * Time.deltaTime, 0, 0);
+        //transform.Translate(-speed * Time.deltaTime, 0, 0);
+        transform.position += Time.deltaTime * -transform.right * 2;
     }
 
     public void Break()
